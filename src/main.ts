@@ -3,6 +3,7 @@ import { AppModule } from './app.module';
 import { dataSource } from './data-source';
 import { Book } from './entities/book.entity';
 import { Member } from './entities/member.entity';
+import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { initialBooks, initialMembers } from './initial-data';
 
 async function bootstrap() {
@@ -12,6 +13,15 @@ async function bootstrap() {
 
   const bookRepository = dataSource.getRepository(Book);
   const memberRepository = dataSource.getRepository(Member);
+
+  const options = new DocumentBuilder()
+    .setTitle('Book And Member')
+    .setDescription('Test Developer')
+    .setVersion('1.0')
+    .build();
+
+  const document = SwaggerModule.createDocument(app, options);
+  SwaggerModule.setup('api', app, document);
 
   // Check if there are no books in the database
   const bookCount = await bookRepository.count();
