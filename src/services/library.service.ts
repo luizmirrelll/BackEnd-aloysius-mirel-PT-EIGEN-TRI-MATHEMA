@@ -1,14 +1,11 @@
 import { Injectable } from '@nestjs/common';
-import { InjectRepository } from '@nestjs/typeorm';
 import { BookRepository } from '../repositories/book.repository';
 import { MemberRepository } from '../repositories/member.repository';
 
 @Injectable()
 export class LibraryService {
   constructor(
-    @InjectRepository(BookRepository)
     private readonly bookRepository: BookRepository,
-    @InjectRepository(MemberRepository)
     private readonly memberRepository: MemberRepository,
   ) {}
 
