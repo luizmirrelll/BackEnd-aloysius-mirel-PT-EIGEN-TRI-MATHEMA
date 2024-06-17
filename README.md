@@ -18,13 +18,13 @@ npm install
 ```bash
 npm run start
 ```
-- Aplikasi akan berjalan di mode pengembangan.
+Aplikasi akan berjalan di mode pengembangan.
 
 - Watch Mode
 ```bash
 npm run start:dev
 ```
-### Aplikasi akan berjalan di mode pengembangan dengan hot-reloading.
+Aplikasi akan berjalan di mode pengembangan dengan hot-reloading.
 
 - Production Mode
 
