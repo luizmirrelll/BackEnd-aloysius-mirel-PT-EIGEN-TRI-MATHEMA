@@ -22,7 +22,6 @@ npm run start
 
 - Watch Mode
 ```bash
-Salin kode
 npm run start:dev
 ```
 ### Aplikasi akan berjalan di mode pengembangan dengan hot-reloading.
