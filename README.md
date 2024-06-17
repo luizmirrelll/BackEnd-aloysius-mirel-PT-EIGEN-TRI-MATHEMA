@@ -40,21 +40,21 @@ npm run start:prod
 ```bash
 npm run test
 ```
-### Menjalankan semua unit tests.
+Menjalankan semua unit tests.
 
 - End-to-End Tests
 
 ```bash
 npm run test:e2e
 ```
-### Menjalankan end-to-end tests.
+Menjalankan end-to-end tests.
 
 - Test Coverage
 
 ```bash
 npm run test:cov
 ```
-### Melihat cakupan pengujian.
+Melihat cakupan pengujian.
 
 # Menjalankan Skenario
 ## Untuk menjalankan skenario yang ditentukan, gunakan perintah:
