@@ -31,7 +31,7 @@ Aplikasi akan berjalan di mode pengembangan dengan hot-reloading.
 ```bash
 npm run start:prod
 ```
-- Aplikasi akan berjalan di mode produksi.
+Aplikasi akan berjalan di mode produksi.
 
 ## Pengujian
 
